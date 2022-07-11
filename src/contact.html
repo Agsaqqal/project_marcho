@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="format-detection" content="telephone=no">
+   <!-- <style>body{opacity: 0;}</style> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+      integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+   <link rel="stylesheet" href="css/style.min.css">
+   <!-- <meta name="robots" content="noindex, nofollow"> -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Marcho</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet">
+</head>
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+         <section class="login">
+            <div class="container" style="background-image: url('@img/login/Image_Bg.png');">
+               <h2 class="login__title">CONTACTS US</h2>
+               <div class="bredcrumbs">
+                  <ul class="bredcrumbs__list">
+                     <li class="bredcrumbs__item">
+                        <a class="bredcrumbs__link" href="#">Home</a>
+                     </li>
+                     <li class="bredcrumbs__item">
+                        <a class="bredcrumbs__link" href="#">contact</a>
+                     </li>
+
+                  </ul>
+               </div>
+            </div>
+         </section>
+         <section class="map">
+            <div class="map-container">
+               <div class="map-box">
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2798918054!2d-74.25986837579143!3d40.69767006755972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2s!4v1655255831629!5m2!1sru!2s"
+                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </div>
+            </div>
+         </section>
+         <section class="contact">
+            <div class="comtact__container">
+               <div class="contact__inner">
+                  <div class="contact__info">
+                     <h3 class="contact__info-title">
+                        Feel Free Don’t
+                        Hesitate To
+                        Contact With Us</h3>
+                     <p class="contact__info-text">
+                        Lorem ipsum dolor sit amet, consectetur adingn elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo maecnaacnrao
+                        cumsan lacus vel facilisis.
+                     </p>
+                     <ul class="contact__info-list">
+                        <li class="contact__info-item">
+                           <a class="contact__info-phone" href="tel:+01234567896">+0-123-456-7896</a>
+                           <a class="contact__info-phone" href="tel:+01234567896">+0-123-456-7896</a>
+                        </li>
+                        <li class="contact__info-item contact__info-item--location">
+                           <div class="contact__info-adress">
+                              Ranlon Market 789 Road,<br>
+                              Market Street, Newyork
+                           </div>
+                        </li>
+                        <li class="contact__info-item contact__info-item--email">
+                           <a class="contact__info-item-mail"
+                              href="mailitoyourmailaddress@gmail.com">yourmailaddress@gmail.com</a>
+                           <a class="contact__info-item-mail"
+                              href="mailito:companymail@gmail.com">companymail@gmail.com</a>
+                        </li>
+                     </ul>
+                  </div>
+                  <form class="contact__form" action="#">
+                     <h4 class="contact__form-title">Contact Form</h4>
+                     <div class="contact__form-box">
+                        <input class="contact__form-input form-input" type="text" placeholder="Your Name">
+                        <input class="contact__form-input" type="text" placeholder="Your E-mail Address">
+                     </div>
+                     <input class="contact__form-subject" type="text" placeholder="Subject">
+                     <textarea class="contact__form-textarea" placeholder="Message here"></textarea>
+                     <button class="contact__form-btn" type="sabmit">SEND MESSAGE</button>
+                  </form>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+      integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

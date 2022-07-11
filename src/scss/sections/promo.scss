@@ -1,0 +1,199 @@
+.promo {
+	&__inner {
+		background-image: url("@img/partner/bg.jpg");
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: 750px 550px;
+		text-align: center;
+		min-height: 690px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-content: center;
+		@media (max-width: $mobile) {
+			background-size: cover;
+			
+			@include adaptiveValue("background-position", 0, -200);
+		}
+		@media (max-width: $mobileSmall) {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	// .promo__container
+
+	&__container {
+	}
+
+	// .promo__content
+	&__img {
+		width: 100%;
+	}
+	&__content {
+		max-width: 570px;
+		grid-column: 2/2;
+		@media (max-width: $mobileSmall) {
+			grid-column: auto;
+		}
+	}
+
+	// .promo__subtitle
+
+	&__subtitle {
+		font-size: 22px;
+		line-height: 26px;
+		color: #fe3e57;
+		font-weight: 500;
+		font-family: "Quicksand";
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	// .promo__title
+
+	&__title {
+		text-transform: uppercase;
+		@include adaptiveValue("font-size", 48, 34);
+		line-height: 26px;
+		color: #29282d;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 55px;
+	}
+
+	// .promo__clock
+
+	&__clock {
+		display: grid;
+		grid-template-columns: repeat(4, 120px);
+		@include adaptiveValue("gap", 30, 0, 992, 490, 1);
+		@media (max-width: $mobileSmall) {
+			grid-template-columns: repeat(2, 120px);
+			justify-content: center;
+			grid-gap: 30px;
+		}
+	}
+
+	// .promo__clock-item
+
+	&__clock-item {
+		background-color: #fff;
+		filter: drop-shadow(0px 5px 15px rgba(134, 133, 133, 0.2));
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	// .promo__clock-days
+
+	&__clock-days {
+		font-size: 48px;
+		line-height: 26px;
+		color: #29282d;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	// .promo__clock-text
+
+	&__clock-text {
+		margin-top: 10px;
+	}
+
+	// .promo__clock-hours
+
+	&__clock-hours {
+		font-size: 48px;
+		line-height: 26px;
+		color: #29282d;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	// .promo__clock-minutes
+
+	&__clock-minutes {
+		font-size: 48px;
+		line-height: 26px;
+		color: #29282d;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	// .promo__clock-seconds
+
+	&__clock-seconds {
+		font-size: 48px;
+		line-height: 26px;
+		color: #29282d;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	// .promo__btn
+
+	&__btn {
+		text-align: center;
+		margin-top: 50px;
+	}
+
+	// .promo__link
+
+	&__link {
+		transition: all 0.4s ease 0s;
+		text-transform: uppercase;
+		font-size: 16px;
+		letter-spacing: 3px;
+		line-height: 26px;
+		color: #29282d;
+		font-weight: 400;
+		text-align: center;
+		background-color: #fff;
+		color: #29282d;
+		border: 1px solid $accsent;
+		padding: 10px 20px;
+
+		&:hover {
+			color: #ffffff;
+			background-color: $accsent;
+		}
+	}
+
+	// .promo__partner
+
+	&__partner {
+	}
+
+	// .promo__partner-list
+
+	&__partner-list {
+		display: flex;
+		justify-content: space-between;
+		padding: 0px 0 80px;
+	}
+
+	// .promo__partner-icon
+
+	&__partner-icon {
+	}
+
+	// .promo__partner-img
+
+	&__partner-img {
+	}
+}
+
+@media (max-width: 620px) {
+	.promo__partner-list{
+		img{
+			display: block;
+		}
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 30px;
+	}
+}

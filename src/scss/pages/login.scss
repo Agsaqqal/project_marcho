@@ -1,0 +1,110 @@
+.modal {
+	max-width: 570px;
+	padding-top: 100px;
+	margin: 0 auto 115px;
+
+	// .modal__container
+
+	&__container {}
+
+	// .modal__title
+
+	&__title {
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+	// .modal__link-register
+
+	&__link-register {
+		text-transform: uppercase;
+		font-size: 22px;
+		color: #909090;
+		font-weight: 400;
+	}
+
+	// .modal__link-login
+
+	&__link-login {
+		text-transform: uppercase;
+		font-size: 22px;
+		font-weight: 400;
+		margin-left: 50px;
+	}
+
+	// .modal__link-login--active
+
+	&__link-login--active {
+		color: $accsent;
+	}
+
+	// .modal__form
+
+	&__form {
+		display: inline-flex;
+		flex-direction: column;
+		justify-content: flex-start;
+
+	}
+
+	// .modal__label
+
+	&__label {
+		text-align: left;
+		font-size: 16px;
+		color: #8d8d8d;
+		font-weight: 500;
+		line-height: 25px;
+		font-family: "Quicksand";
+	}
+
+	// .modal__input
+
+	&__input {
+		background-color: #f6f6f6;
+		width: 570px;
+		height: 60px;
+		padding: 15px;
+		margin: 5px 0px 30px 0px;
+
+	}
+
+	// .modal__checkbox
+
+	&__checkbox {
+		text-align: left;
+		justify-content: flex-start;
+		margin-bottom: 15px;
+	}
+
+	// .modal__btn
+
+	&__btn {
+		text-transform: uppercase;
+		padding: 20px 0;
+		width: 570px;
+		height: 60px;
+		background-color: #292929;
+		font-size: 16px;
+		letter-spacing: 3px;
+		color: #ffffff;
+		font-weight: 400;
+		margin-bottom: 10px;
+	}
+}
+
+.lostpass {
+	display: block;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: "Quicksand";
+	transition: all 0.3s ease 0s;
+	color: $accsent;
+}
+
+@media (max-width: 375px) {
+	.modal__link-register {
+		margin: 0 20px;
+	}
+}
